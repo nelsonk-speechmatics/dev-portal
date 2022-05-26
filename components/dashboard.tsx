@@ -50,7 +50,7 @@ export default observer(function Dashboard({ children }) {
   useEffect(() => {
     let st: number;
     if (!isAuthenticated) {
-      st = window.setTimeout(() => router.push('/login/'), 2000);
+      st = window.setTimeout(() => router.push('/login/'), 200000);
     }
     return () => window.clearTimeout(st);
   }, [isAuthenticated]);
