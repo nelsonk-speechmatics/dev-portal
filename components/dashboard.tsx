@@ -62,7 +62,7 @@ export default observer(function Dashboard({ children }) {
   useEffect(() => {
     let st: number;
     if (!!b2cError) {
-      st = window.setTimeout(() => router.push('/login/'), 2000);
+      st = window.setTimeout(() => router.push('/login/'), 200000);
     }
     return () => window.clearTimeout(st);
   }, [b2cError]);
