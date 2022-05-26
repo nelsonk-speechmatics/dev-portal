@@ -161,6 +161,7 @@ export const GenerateTokenComponent: ChakraComponent<'div', GTCprops>
                   disabled={genTokenStage == 'waiting'}
                   onKeyDown={inputOnKeyDown}
                   data-qa="input-token-name"
+                  maxlength="30"
                 ></Input>
                 <Button
                   variant="speechmatics"
